@@ -37,5 +37,19 @@ public class Matching_dash_plus_group
         System.out.println("555 hello HELLO".matches("[0-9 a-z A-Z]+")); //true
         System.out.println("".matches("[0-9 a-z A-Z]+")); //false
         System.out.println("".matches("[0-9 a-z A-Z]*")); //true
+        System.out.println("");
+
+        System.out.println("helloHELLO".matches("[ah]+")); //false
+        System.out.println("he".matches("[he]+")); //true
+        System.out.println("hehehe".matches("[he]+")); //true
+        System.out.println("hehehe".matches("[he]*")); //true
+        System.out.println("");
     }
 }
+
+//we know that 
+// a* = ɛ,a,aa,aaa,aaaa,...............
+// a+ = a,aa,aaa,aaaa,...............
+
+// (ab)* = ɛ,ab,abab,ababab,abababab,...............
+// a+ = ab,abab,ababab,abababab,...............
