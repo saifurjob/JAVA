@@ -26,6 +26,8 @@ public class Matching_square_brackets
         System.out.println("");
         
         System.out.println("hello".matches("[a-zA-Z0-9]*")); //T
+        System.out.println("h".matches("[a-zA-Z0-9 \\s ]")); //T
+        System.out.println("hello WORLD 2015".matches("[a-zA-Z0-9 \\s ]")); //F
         System.out.println("hello WORLD 2015".matches("[a-zA-Z0-9 \\s ]*")); //T
         System.out.println("");
         
