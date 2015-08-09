@@ -1,0 +1,2 @@
+Java_design_patterns.Singleton.Singleton_testing
+Java_design_patterns.Singleton.Singleton

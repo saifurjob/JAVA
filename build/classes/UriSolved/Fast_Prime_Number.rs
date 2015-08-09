@@ -1,0 +1,2 @@
+UriSolved.Prime
+UriSolved.Fast_Prime_Number

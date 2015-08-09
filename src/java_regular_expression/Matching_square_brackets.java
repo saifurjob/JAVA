@@ -31,6 +31,5 @@ public class Matching_square_brackets
         System.out.println("hello WORLD 2015".matches("[a-zA-Z0-9 \\s ]*")); //T
         System.out.println("");
         
-        
     }
 }

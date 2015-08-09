@@ -1,0 +1,2 @@
+UriSolved.Simple_Calculate
+UriSolved.Products

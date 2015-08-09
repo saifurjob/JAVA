@@ -1,0 +1,2 @@
+UriSolved.Factorial
+UriSolved.Factorial_Sum

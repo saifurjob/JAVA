@@ -1,0 +1,2 @@
+UriSolved.Calculation
+UriSolved.Sum_of_Consecutive_Odd_Numbers_3
