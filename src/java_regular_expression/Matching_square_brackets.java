@@ -31,5 +31,14 @@ public class Matching_square_brackets
         System.out.println("hello WORLD 2015".matches("[a-zA-Z0-9 \\s ]*")); //T
         System.out.println("");
         
+        System.out.println("abn".matches("a.n")); //T
+        System.out.println("abbn".matches("a.n")); //F
+        System.out.println("abbn".matches("a.+n")); //T
+        System.out.println("abbcadsdasdn".matches("a.+n")); //T
+        
+        System.out.println("");
+        System.out.println("50000".replaceAll("[^[5]+]", "")); //0000
+        System.out.println("50505".replaceAll("[^[5]+]", "")); //00
+        System.out.println("50505".replaceAll("[^[^5]+]", "")); //555
     }
 }

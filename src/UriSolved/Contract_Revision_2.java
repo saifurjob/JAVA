@@ -14,15 +14,31 @@ public class Contract_Revision_2
         {
             while (true) 
             {      
-                int a, b;
-                a = sc.nextInt();
-                b = sc.nextInt();
+                int a = sc.nextInt();
+                long b = sc.nextLong();
                 if(a==0 && b==0)    break;
                 
-                System.out.println(a+" = "+((a+"").matches("5")));
+                String x = a+"";
+                String y = b+"";
+                
+//                System.out.println(b);
+                if(!y.contains(x))
+                {
+                    System.out.println(b);
+                }
+                else
+                {
+                    String regex = "[^["+a+"]+]";
+                    y = y.replaceAll(regex, "");
+                    if(y.length()==0)   
+                        System.out.println(0);
+                    else    
+                        System.out.println(Integer.parseInt(y));
+                }
             }
         } catch (NoSuchElementException e) {
-        }
+        }catch(NumberFormatException e)
+        {}
             
     }
 }
